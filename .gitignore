@@ -28,3 +28,5 @@ neo4j/
 
 # Ignore Capistrano customizations
 config/deploy/*
+
+ruby_wrapper
