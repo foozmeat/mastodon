@@ -489,11 +489,11 @@ a.status__content__spoiler-link {
   }
 
   .account__header__content {
-    color: $color2;
+    color: $color1;
   }
 
   .account__header__display-name {
-    color: $color1;
+    color: $color5;
   }
 
   .account__header__username {
@@ -506,7 +506,7 @@ a.status__content__spoiler-link {
   word-break: normal;
   font-weight: 400;
   overflow: hidden;
-  color: $color3;
+  color: $color1;
 
   p {
     margin-bottom: 20px;
