@@ -14,12 +14,6 @@
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  text-align: center;
-  border: 10px none;
-  color: $color1;
   font-size: 14px;
   font-weight: 500;
   height: 36px;
@@ -57,8 +51,8 @@
 }
 
 .column-icon {
+  background: lighten($color1, 4%);
   color: $color3;
-  background: lighten($color2, 4%);
   cursor: pointer;
   font-size: 16px;
   padding: 15px;
@@ -91,7 +85,7 @@
 .icon-button {
   display: inline-block;
   padding: 0;
-  color: $color3;
+  color: lighten($color1, 26%);
   border: none;
   background: transparent;
   cursor: pointer;
@@ -103,7 +97,7 @@
   }
 
   &.disabled {
-    color: lighten($color2, 13%);
+    color: lighten($color1, 13%);
     cursor: default;
   }
 
@@ -120,10 +114,10 @@
   }
 
   &.inverted {
-    color: lighten($color5, 33%);
+    color: lighten($color1, 33%);
 
     &:hover, &:active, &:focus {
-      color: lighten($color5, 26%);
+      color: lighten($color1, 26%);
     }
 
     &.active {
@@ -149,7 +143,7 @@
 }
 
 .text-icon-button {
-  color: lighten($color5, 33%);
+  color: lighten($color1, 33%);
   border: none;
   background: transparent;
   cursor: pointer;
@@ -235,10 +229,10 @@
 }
 
 .compose-form__modifiers {
-  color: $color5;
+  color: $color1;
   font-family: inherit;
   font-size: 14px;
-  background: $color1;
+  background: $color5;
   border-radius: 0 0 4px 0;
 }
 
@@ -249,7 +243,7 @@
 
 .compose-form__buttons {
   padding: 10px;
-  background: darken($color1, 8%);
+  background: darken($color5, 8%);
   box-shadow: inset 0 5px 5px rgba($color8, 0.05);
   border-radius: 0 0 4px 4px;
   display: flex;
@@ -412,7 +406,7 @@
   }
 
   a {
-    color: $color4;
+    color: $color2;
     text-decoration: none;
 
     &:hover {
@@ -439,10 +433,10 @@
   }
 
   .status__content__spoiler-link {
-    background: lighten($color3, 30%);
+    background: lighten($color1, 30%);
 
     &:hover {
-      background: lighten($color3, 40%);
+      background: lighten($color1, 33%);
       text-decoration: none;
     }
   }
@@ -469,16 +463,8 @@ a.status__content__spoiler-link {
   padding-left: 68px;
   position: relative;
   min-height: 48px;
-  border-bottom: 1px solid lighten($color2, 8%);
+  border-bottom: 1px solid lighten($color1, 8%);
   cursor: default;
-
-  .status__relative-time {
-    color: lighten($color5, 26%);
-  }
-
-  .status__display-name {
-    color: lighten($color5, 26%);
-  }
 
   &.light {
     .status__relative-time {
@@ -486,12 +472,12 @@ a.status__content__spoiler-link {
     }
 
     .status__display-name {
-      color: $color5;
+      color: $color1;
     }
 
     .display-name {
       strong {
-        color: $color5;
+        color: $color1;
       }
 
       span {
@@ -500,14 +486,14 @@ a.status__content__spoiler-link {
     }
 
     .status__content {
-      color: $color5;
+      color: $color1;
 
       a {
         color: $color4;
       }
 
       a.status__content__spoiler-link {
-        color: $color1;
+        color: $color5;
         background: $color3;
 
         &:hover {
@@ -562,14 +548,14 @@ a.status__content__spoiler-link {
 
 .status__prepend {
   margin-left: 68px;
-  color: $color5;
+  color: lighten($color1, 26%);
   padding: 8px 0;
   padding-bottom: 2px;
   font-size: 14px;
   position: relative;
 
   .status__display-name strong {
-    color: lighten($color5, 26%);
+    color: lighten($color1, 26%);
   }
 }
 
@@ -592,7 +578,7 @@ a.status__content__spoiler-link {
 }
 
 .detailed-status {
-  background: lighten($color2, 15%);
+  background: lighten($color1, 4%);
   padding: 14px 10px;
 
   .status__content {
@@ -608,17 +594,17 @@ a.status__content__spoiler-link {
 
 .detailed-status__meta {
   margin-top: 15px;
-  color: lighten($color5, 26%);
+  color: lighten($color1, 26%);
   font-size: 14px;
   line-height: 18px;
 }
 
 .detailed-status__action-bar {
-  background: lighten($color2, 15%);
+  background: lighten($color1, 4%);
+  border-top: 1px solid lighten($color1, 8%);
+  border-bottom: 1px solid lighten($color1, 8%);
   display: flex;
   flex-direction: row;
-  border-top: 1px solid lighten($color2, 8%);
-  border-bottom: 1px solid lighten($color5, 8%);
   padding: 10px 0;
 }
 
@@ -640,7 +626,7 @@ a.status__content__spoiler-link {
   font-size: 14px;
 
   a {
-    color: lighten($color5, 20%);
+    color: lighten($color1, 20%);
   }
 }
 
@@ -694,7 +680,7 @@ a.status__content__spoiler-link {
   }
 
   .account__header__content {
-    color: $color5;
+    color: $color2;
   }
 
   .account__header__display-name {
@@ -707,11 +693,12 @@ a.status__content__spoiler-link {
 }
 
 .account__header__content {
-  word-wrap: break-word;
-  word-break: normal;
+  color: $color3;
+  font-size: 14px;
   font-weight: 400;
   overflow: hidden;
-  color: $color5;
+  word-break: normal;
+  word-wrap: break-word;
 
   p {
     margin-bottom: 20px;
@@ -849,7 +836,7 @@ a.status__content__spoiler-link {
 }
 
 .detailed-status__display-name {
-  color: $color5;
+  color: $color2;
   display: block;
   line-height: 24px;
   margin-bottom: 15px;
@@ -881,12 +868,12 @@ a.status__content__spoiler-link {
 
 .muted {
   .status__content p,
-  .status__content p, .status__content a {
-    color: lighten($color5, 26%);
+  .status__content a {
+    color: lighten($color1, 26%);
   }
 
   .status__display-name strong {
-    color: lighten($color5, 26%);
+    color: lighten($color1, 26%);
   }
 
   .status__avatar {
@@ -1040,13 +1027,13 @@ a.status__content__spoiler-link {
 
   &.light {
     &:before {
-      border-color: transparent transparent $color1 transparent;
+      border-color: transparent transparent $color5 transparent;
     }
   }
 
   & > ul {
     list-style: none;
-    background: $color1;
+    background: $color2;
     padding: 4px 0;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba($color8, 0.4);
@@ -1073,8 +1060,8 @@ a.status__content__spoiler-link {
     box-sizing: border-box;
     width: 140px;
     text-decoration: none;
-    background: $color1;
-    color: $color5;
+    background: $color2;
+    color: $color1;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1085,7 +1072,7 @@ a.status__content__spoiler-link {
 
     &:hover {
       background: $color4;
-      color: $color1;
+      color: $color2;
     }
   }
 }
@@ -1403,11 +1390,6 @@ a.status__content__spoiler-link {
   flex: 0 0 auto;
   font-size: 16px;
   padding: 15px;
-  font-size: 16px;
-  background: lighten($color2, 4%);
-  flex: 0 0 auto;
-  cursor: pointer;
-  color: $color4;
   z-index: 3;
 
   &:hover {
@@ -1468,7 +1450,7 @@ a.status__content__spoiler-link {
   height: 24px;
   padding: 0;
   border-radius: 30px;
-  background-color: $color2;
+  background-color: $color1;
   transition: all 0.2s ease;
 }
 
@@ -1530,7 +1512,7 @@ a.status__content__spoiler-link {
   height: 22px;
   border: 1px solid $color1;
   border-radius: 50%;
-  background-color: darken($color1, 2%);
+  background-color: darken($color5, 2%);
   box-sizing: border-box;
   transition: all 0.25s ease;
 }
@@ -1585,7 +1567,7 @@ a.status__content__spoiler-link {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  color: $color5;
+  color: $color1;
   padding: 10px;
   font-family: inherit;
   font-size: 14px;
@@ -1608,9 +1590,8 @@ a.status__content__spoiler-link {
 
 .autosuggest-textarea__textarea {
   min-height: 100px;
-  background: $color1;
+  background: $color5;
   border-radius: 4px 4px 0 0;
-  border: 1px solid darken($color1, 8%);
   padding-bottom: 0;
   padding-right: 10px + 22px;
   resize: none;
@@ -1744,15 +1725,15 @@ button.icon-button.active i.fa-retweet {
   display: flex;
   cursor: pointer;
   font-size: 14px;
-  border: 1px solid lighten($color5, 8%);
+  border: 1px solid lighten($color1, 8%);
   border-radius: 4px;
-  color: lighten($color5, 26%);
+  color: lighten($color1, 26%);
   margin-top: 14px;
   text-decoration: none;
   overflow: hidden;
 
   &:hover {
-    // background: lighten($color1, 8%);
+    background: lighten($color1, 8%);
   }
 }
 
@@ -1836,7 +1817,7 @@ button.icon-button.active i.fa-retweet {
 .column-header {
   padding: 15px;
   font-size: 16px;
-  background: lighten($color2, 4%);
+  background: lighten($color1, 4%);
   flex: 0 0 auto;
   cursor: pointer;
   position: relative;
@@ -1878,12 +1859,12 @@ button.icon-button.active i.fa-retweet {
 
 .collapsable-collapsed {
   color: $color3;
-  background: lighten($color2, 4%);
+  background: lighten($color1, 4%);
 }
 
 .collapsable {
   color: $color5;
-  background: lighten($color2, 8%);
+  background: lighten($color1, 8%);
 
   &:hover {
     color: $color5;
@@ -2096,7 +2077,7 @@ button.icon-button.active i.fa-retweet {
 .emoji-dialog {
   width: 245px;
   height: 270px;
-  background: $color1;
+  background: $color5;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: hidden;
@@ -2282,16 +2263,6 @@ button.icon-button.active i.fa-retweet {
   }
 }
 
-.autosuggest-status {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
-  strong {
-    font-weight: 500;
-  }
-}
-
 .upload-area {
   align-items: center;
   background: rgba($color8, 0.8);
@@ -2425,7 +2396,7 @@ button.icon-button.active i.fa-retweet {
   left: 0;
   top: 27px;
   width: 230px;
-  background: $color1;
+  background: $color5;
   border-radius: 0 4px 4px 4px;
   z-index: 2;
   overflow: hidden;
@@ -2460,7 +2431,6 @@ button.icon-button.active i.fa-retweet {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  color: $color5;
 }
 
 .privacy-dropdown__option__content {
@@ -2470,13 +2440,13 @@ button.icon-button.active i.fa-retweet {
   strong {
     font-weight: 500;
     display: block;
-    color: $color5;
+    color: $color1;
   }
 }
 
 .privacy-dropdown.active {
   .privacy-dropdown__value {
-    background: $color1;
+    background: $color5;
     border-radius: 4px 4px 0 0;
     box-shadow: 0 -4px 4px rgba($color8, 0.1);
   }

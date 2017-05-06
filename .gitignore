@@ -44,3 +44,4 @@ redis
 *~
 ruby_wrapper
 *.swp
+/.idea

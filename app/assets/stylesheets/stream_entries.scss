@@ -3,7 +3,7 @@
   box-shadow: 0 0 15px rgba($color8, 0.2);
 
   .entry {
-    background: $color1;
+    background: $color5;
 
     .detailed-status.light, .status.light {
       border-bottom: 1px solid $color2;
@@ -82,7 +82,7 @@
 
       strong {
         font-weight: 500;
-        color: $color5;
+        color: $color1;
       }
 
       span {
@@ -92,18 +92,18 @@
     }
 
     .status__content {
-      color: $color5;
+      color: $color1;
 
       a {
         color: $color4;
       }
 
       a.status__content__spoiler-link {
-        background: lighten($color3, 30%);
+        color: $color5;
+        background: $color3;
 
         &:hover {
-          background: lighten($color3, 40%);
-          text-decoration: none;
+          background: lighten($color3, 8%);
         }
       }
     }
@@ -124,7 +124,7 @@
 
   .detailed-status.light {
     padding: 14px;
-    background: $color1;
+    background: $color5;
     cursor: default;
 
     .detailed-status__display-name {
@@ -146,7 +146,7 @@
 
         strong {
           font-weight: 500;
-          color: $color5;
+          color: $color1;
         }
 
         span {
@@ -167,19 +167,18 @@
     }
 
     .status__content {
-      color: $color5;
+      color: $color1;
 
       a {
         color: $color4;
       }
 
       a.status__content__spoiler-link {
-        background: lighten($color3, 30%);
-        color: $color1;
+        color: $color5;
+        background: $color3;
 
         &:hover {
-          background: lighten($color3, 40%);
-          text-decoration: none;
+          background: lighten($color3, 8%);
         }
       }
     }
