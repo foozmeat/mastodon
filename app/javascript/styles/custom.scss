@@ -1,11 +1,23 @@
-$color1: #ffffff; // backgrounds and text on dark buttons
-$color2: #9baec8; // column headers and some header text
-$color3: #333333; // icons
-$color4: #2b90d9; // buttons and active icons
-$color5: #282c37; // most text
-$color6: #df405a; // error red
-$color7: #79bd9a; // succ green
-$color8: #000000; // black
+//$color1: #ffffff; // backgrounds and text on dark buttons
+//$color2: #9baec8; // column headers and some header text
+//$color3: #333333; // icons
+//$color4: #2b90d9; // buttons and active icons
+//$color5: #282c37; // most text
+//$color6: #282c37; // error red
+//$color7: #79bd9a; // succ green
+//$color8: #000000; // black
+
+$ui-base-color:           #282c37;
+$ui-secondary-color:      #9baec8;
+$ui-primary-color:        #333333;
+$ui-highlight-color:      #2b90d9;
+$base-border-color:       #ffffff;
+$simple-background-color: #ffffff;
+$primary-text-color:      #ffffff;
+$error-value-color:       #282c37;
+$valid-value-color:       #79bd9a;
+$base-shadow-color:       #000000;
+$base-overlay-background: #000000;
 
 @import 'application';
 
