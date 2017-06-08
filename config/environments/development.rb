@@ -34,6 +34,11 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  ActiveSupport::Logger.new(STDOUT).tap do |logger|
+    logger.formatter = config.log_formatter
+    config.logger = ActiveSupport::TaggedLogging.new(logger)
+  end
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.perform_caching = false
@@ -76,8 +81,6 @@ Rails.application.configure do
 
     Bullet.add_whitelist type: :n_plus_one_query, class_name: 'User', association: :account
   end
-
-  config.react.variant = :development
 end
 
 ActiveRecordQueryTrace.enabled = ENV.fetch('QUERY_TRACE_ENABLED') { false }
