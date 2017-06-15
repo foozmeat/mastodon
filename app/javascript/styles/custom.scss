@@ -7,387 +7,387 @@
 //$color7: #79bd9a; // succ green
 //$color8: #000000; // black
 
-$ui-base-color:           #282c37;
-$ui-secondary-color:      #9baec8;
-$ui-primary-color:        #333333;
-$ui-highlight-color:      #2b90d9;
-$base-border-color:       #ffffff;
-$simple-background-color: #ffffff;
-$primary-text-color:      #ffffff;
-$error-value-color:       #282c37;
-$valid-value-color:       #79bd9a;
-$base-shadow-color:       #000000;
-$base-overlay-background: #000000;
-
-@import 'application';
-
-// about
-.information-board {
-  border-top: 1px solid lighten($color5, 10%);
-  border-bottom: 1px solid lighten($color5, 10%);
-}
-
-.sidebar {
-  border-left: 1px solid lighten($color5, 10%);
-}
-
-.panel {
-  .panel-header {
-    background: lighten($color2, 10%) !important;
-  }
-}
-
-// accounts
-.name {
-  color: $color1;
-}
-
-.card {
-  .counter {
-    color: $color1;
-
-    .counter-number {
-      color: $color1;
-    }
-
-  }
-
-  .name {
-    color: $color1;
-
-  }
-}
-
-// admin
-
-.admin-wrapper {
-  .sidebar {
-    ul {
-      ul {
-        a {
-
-          &.selected {
-            background-color: $color4 !important;
-
-          }
-        }
-      }
-    }
-  }
-}
-
-// basics
-
-body {
-  background: $color1 !important;
-}
-
-// components
-
-.button {
-  color: $color1;
-}
-
-.column-icon {
-  background: lighten($color2, 4%) !important;
-}
-
-.icon-button {
-  color: $color3;
-  &.disabled {
-    color: lighten($color2, 13%);
-  }
-
-  &.inverted {
-    color: lighten($color5, 33%);
-
-    &:hover, &:active, &:focus {
-      color: lighten($color5, 26%);
-    }
-  }
-}
-
-.text-icon-button {
-  color: lighten($color5, 33%);
-}
-
-.compose-form__modifiers {
-  color: $color5;
-  background: $color1 !important;
-}
-
-.compose-form__buttons {
-  background: darken($color1, 8%) !important;
-}
-
-.reply-indicator__content {
-  a {
-    color: $color4;
-  }
-
-  .status__content__spoiler-link {
-    background: lighten($color3, 30%);
-
-    &:hover {
-      background: lighten($color3, 40%);
-    }
-  }
-}
-
-.status {
-  border-bottom: 1px solid lighten($color2, 8%);
-
-  .status__relative-time {
-    color: lighten($color5, 26%);
-  }
-
-  .status__display-name {
-    color: lighten($color5, 26%);
-  }
-
-  &.light {
-    .status__display-name {
-      color: $color5;
-    }
-
-    .display-name {
-      strong {
-        color: $color5;
-      }
-    }
-
-    .status__content {
-      color: $color5;
-
-      a.status__content__spoiler-link {
-        color: $color1;
-      }
-    }
-  }
-}
-
-.status__prepend {
-  color: $color5;
-
-  .status__display-name strong {
-    color: lighten($color5, 26%);
-  }
-}
-
-.detailed-status {
-  background: lighten($color2, 15%) !important;
-}
-
-.detailed-status__meta {
-  color: lighten($color5, 26%);
-}
-
-.detailed-status__action-bar {
-  background: lighten($color2, 15%);
-  border-top: 1px solid lighten($color2, 8%);
-  border-bottom: 1px solid lighten($color5, 8%);
-}
-
-.reply-indicator__content {
-  a {
-    color: lighten($color5, 20%);
-  }
-}
-
-.account__header {
-  .account__header__content {
-    color: $color2;
-  }
-}
-
-.account__header__content {
-  color: $color2;
-}
-
-.detailed-status__display-name {
-  color: $color5;
-}
-
-.muted {
-  .status__content p,
-  .status__content a {
-    color: lighten($color5, 26%);
-  }
-
-  .status__display-name strong {
-    color: lighten($color5, 26%);
-  }
-}
-
-.dropdown--active .dropdown__content {
-  &.light {
-    &:before {
-      border-color: transparent transparent $color1 transparent;
-    }
-  }
-  & > ul {
-    background: $color1;
-  }
-  & > ul > li > a {
-    background: $color1;
-    color: $color5;
-  }
-}
-
-.column-back-button {
-  background: lighten($color2, 4%);
-}
-
-.react-toggle-track {
-  background-color: $color2;
-}
-
-.react-toggle-thumb {
-  background-color: darken($color1, 2%);
-}
-
-.autosuggest-textarea__textarea, .spoiler-input__input {
-  color: $color5 !important;
-}
-
-.autosuggest-textarea__textarea {
-  background: $color1 !important;
-  border: 1px solid darken($color1, 8%) !important;
-}
-
-.status-card {
-  color: lighten($color5, 26%);
-
-  &:hover {
-    // background: lighten($color1, 8%);
-  }
-}
-
-.column-header {
-  background: lighten($color2, 4%) !important;
-}
-
-.collapsable-collapsed {
-  background: lighten($color2, 4%) !important ;
-}
-
-.collapsable {
-  background: lighten($color2, 8%) !important;
-}
-
-.emoji-dialog {
-  background: $color1 !important;
-}
-
-.privacy-dropdown__dropdown {
-  background: $color1 !important;
-}
-
-.privacy-dropdown__option__icon {
-  color: $color5;
-}
-
-.privacy-dropdown__option__content {
-  strong {
-    color: $color5;
-  }
-}
-
-.privacy-dropdown.active {
-  .privacy-dropdown__value {
-    background: $color1 !important;
-  }
-
-}
-
-// forms
-
-.simple_form {
-
-  .input.boolean {
-
-    label {
-      color: $color5;
-    }
-
-  }
-
-  button, .block-button {
-    color: $color1;
-
-  }
-
-  .input.radio_buttons .radio label {
-    color: $color5;
-  }
-}
-
-// reset
-
-::-webkit-scrollbar-thumb {
-  background: lighten($color2, 4%) !important;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: lighten($color2, 6%) !important;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: lighten($color2, 4%) !important;
-}
-
-// stream_entries
-
-.activity-stream {
-
-  .entry {
-    background: $color1;
-  }
-
-  .status.light {
-    .display-name {
-      strong {
-        color: $color5;
-      }
-    }
-
-    .status__content {
-      color: $color5;
-
-      a.status__content__spoiler-link {
-        background: lighten($color3, 30%);
-
-        &:hover {
-          background: lighten($color3, 40%);
-          text-decoration: none;
-        }
-      }
-    }
-    .detailed-status.light {
-      background: $color1;
-
-      .detailed-status__display-name {
-
-        .display-name {
-          strong {
-            color: $color5;
-          }
-        }
-      }
-
-      .status__content {
-        color: $color5;
-
-        a.status__content__spoiler-link {
-          background: lighten($color3, 30%);
-          color: $color1;
-
-          &:hover {
-            background: lighten($color3, 40%);
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-}
+// $ui-base-color:           #282c37;
+// $ui-secondary-color:      #9baec8;
+// $ui-primary-color:        #333333;
+// $ui-highlight-color:      #2b90d9;
+// $base-border-color:       #ffffff;
+// $simple-background-color: #ffffff;
+// $primary-text-color:      #ffffff;
+// $error-value-color:       #282c37;
+// $valid-value-color:       #79bd9a;
+// $base-shadow-color:       #000000;
+// $base-overlay-background: #000000;
+//
+// @import 'application';
+//
+// // about
+// .information-board {
+//   border-top: 1px solid lighten($color5, 10%);
+//   border-bottom: 1px solid lighten($color5, 10%);
+// }
+//
+// .sidebar {
+//   border-left: 1px solid lighten($color5, 10%);
+// }
+//
+// .panel {
+//   .panel-header {
+//     background: lighten($color2, 10%) !important;
+//   }
+// }
+//
+// // accounts
+// .name {
+//   color: $color1;
+// }
+//
+// .card {
+//   .counter {
+//     color: $color1;
+//
+//     .counter-number {
+//       color: $color1;
+//     }
+//
+//   }
+//
+//   .name {
+//     color: $color1;
+//
+//   }
+// }
+//
+// // admin
+//
+// .admin-wrapper {
+//   .sidebar {
+//     ul {
+//       ul {
+//         a {
+//
+//           &.selected {
+//             background-color: $color4 !important;
+//
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// // basics
+//
+// body {
+//   background: $color1 !important;
+// }
+//
+// // components
+//
+// .button {
+//   color: $color1;
+// }
+//
+// .column-icon {
+//   background: lighten($color2, 4%) !important;
+// }
+//
+// .icon-button {
+//   color: $color3;
+//   &.disabled {
+//     color: lighten($color2, 13%);
+//   }
+//
+//   &.inverted {
+//     color: lighten($color5, 33%);
+//
+//     &:hover, &:active, &:focus {
+//       color: lighten($color5, 26%);
+//     }
+//   }
+// }
+//
+// .text-icon-button {
+//   color: lighten($color5, 33%);
+// }
+//
+// .compose-form__modifiers {
+//   color: $color5;
+//   background: $color1 !important;
+// }
+//
+// .compose-form__buttons {
+//   background: darken($color1, 8%) !important;
+// }
+//
+// .reply-indicator__content {
+//   a {
+//     color: $color4;
+//   }
+//
+//   .status__content__spoiler-link {
+//     background: lighten($color3, 30%);
+//
+//     &:hover {
+//       background: lighten($color3, 40%);
+//     }
+//   }
+// }
+//
+// .status {
+//   border-bottom: 1px solid lighten($color2, 8%);
+//
+//   .status__relative-time {
+//     color: lighten($color5, 26%);
+//   }
+//
+//   .status__display-name {
+//     color: lighten($color5, 26%);
+//   }
+//
+//   &.light {
+//     .status__display-name {
+//       color: $color5;
+//     }
+//
+//     .display-name {
+//       strong {
+//         color: $color5;
+//       }
+//     }
+//
+//     .status__content {
+//       color: $color5;
+//
+//       a.status__content__spoiler-link {
+//         color: $color1;
+//       }
+//     }
+//   }
+// }
+//
+// .status__prepend {
+//   color: $color5;
+//
+//   .status__display-name strong {
+//     color: lighten($color5, 26%);
+//   }
+// }
+//
+// .detailed-status {
+//   background: lighten($color2, 15%) !important;
+// }
+//
+// .detailed-status__meta {
+//   color: lighten($color5, 26%);
+// }
+//
+// .detailed-status__action-bar {
+//   background: lighten($color2, 15%);
+//   border-top: 1px solid lighten($color2, 8%);
+//   border-bottom: 1px solid lighten($color5, 8%);
+// }
+//
+// .reply-indicator__content {
+//   a {
+//     color: lighten($color5, 20%);
+//   }
+// }
+//
+// .account__header {
+//   .account__header__content {
+//     color: $color2;
+//   }
+// }
+//
+// .account__header__content {
+//   color: $color2;
+// }
+//
+// .detailed-status__display-name {
+//   color: $color5;
+// }
+//
+// .muted {
+//   .status__content p,
+//   .status__content a {
+//     color: lighten($color5, 26%);
+//   }
+//
+//   .status__display-name strong {
+//     color: lighten($color5, 26%);
+//   }
+// }
+//
+// .dropdown--active .dropdown__content {
+//   &.light {
+//     &:before {
+//       border-color: transparent transparent $color1 transparent;
+//     }
+//   }
+//   & > ul {
+//     background: $color1;
+//   }
+//   & > ul > li > a {
+//     background: $color1;
+//     color: $color5;
+//   }
+// }
+//
+// .column-back-button {
+//   background: lighten($color2, 4%);
+// }
+//
+// .react-toggle-track {
+//   background-color: $color2;
+// }
+//
+// .react-toggle-thumb {
+//   background-color: darken($color1, 2%);
+// }
+//
+// .autosuggest-textarea__textarea, .spoiler-input__input {
+//   color: $color5 !important;
+// }
+//
+// .autosuggest-textarea__textarea {
+//   background: $color1 !important;
+//   border: 1px solid darken($color1, 8%) !important;
+// }
+//
+// .status-card {
+//   color: lighten($color5, 26%);
+//
+//   &:hover {
+//     // background: lighten($color1, 8%);
+//   }
+// }
+//
+// .column-header {
+//   background: lighten($color2, 4%) !important;
+// }
+//
+// .collapsable-collapsed {
+//   background: lighten($color2, 4%) !important ;
+// }
+//
+// .collapsable {
+//   background: lighten($color2, 8%) !important;
+// }
+//
+// .emoji-dialog {
+//   background: $color1 !important;
+// }
+//
+// .privacy-dropdown__dropdown {
+//   background: $color1 !important;
+// }
+//
+// .privacy-dropdown__option__icon {
+//   color: $color5;
+// }
+//
+// .privacy-dropdown__option__content {
+//   strong {
+//     color: $color5;
+//   }
+// }
+//
+// .privacy-dropdown.active {
+//   .privacy-dropdown__value {
+//     background: $color1 !important;
+//   }
+//
+// }
+//
+// // forms
+//
+// .simple_form {
+//
+//   .input.boolean {
+//
+//     label {
+//       color: $color5;
+//     }
+//
+//   }
+//
+//   button, .block-button {
+//     color: $color1;
+//
+//   }
+//
+//   .input.radio_buttons .radio label {
+//     color: $color5;
+//   }
+// }
+//
+// // reset
+//
+// ::-webkit-scrollbar-thumb {
+//   background: lighten($color2, 4%) !important;
+// }
+//
+// ::-webkit-scrollbar-thumb:hover {
+//   background: lighten($color2, 6%) !important;
+// }
+//
+// ::-webkit-scrollbar-thumb:active {
+//   background: lighten($color2, 4%) !important;
+// }
+//
+// // stream_entries
+//
+// .activity-stream {
+//
+//   .entry {
+//     background: $color1;
+//   }
+//
+//   .status.light {
+//     .display-name {
+//       strong {
+//         color: $color5;
+//       }
+//     }
+//
+//     .status__content {
+//       color: $color5;
+//
+//       a.status__content__spoiler-link {
+//         background: lighten($color3, 30%);
+//
+//         &:hover {
+//           background: lighten($color3, 40%);
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//     .detailed-status.light {
+//       background: $color1;
+//
+//       .detailed-status__display-name {
+//
+//         .display-name {
+//           strong {
+//             color: $color5;
+//           }
+//         }
+//       }
+//
+//       .status__content {
+//         color: $color5;
+//
+//         a.status__content__spoiler-link {
+//           background: lighten($color3, 30%);
+//           color: $color1;
+//
+//           &:hover {
+//             background: lighten($color3, 40%);
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
