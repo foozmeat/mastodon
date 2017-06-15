@@ -16,17 +16,9 @@ Rails.application.configure do
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
 
-    config.cache_store = :redis_store, {
-      host: ENV.fetch('REDIS_HOST') { 'localhost' },
-      port: ENV.fetch('REDIS_PORT') { 6379 },
-      password: ENV.fetch('REDIS_PASSWORD') { false },
-      db: 0,
-      namespace: 'cache',
-      expires_in: 1.minute,
-    }
-
+    config.cache_store = :memory_store
     config.public_file_server.headers = {
-      'Cache-Control' => 'public, max-age=172800',
+      'Cache-Control' => "public, max-age=#{2.days.seconds.to_i}"
     }
   else
     config.action_controller.perform_caching = false
@@ -41,6 +33,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
